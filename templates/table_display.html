@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data display</title>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <h2>DataFrame Output</h2>
+    <div class="tblClass">{{html_table | safe}}</div>
+    <form action="/imagerequest" method="post">
+      <label for="row">Choose column x-axis:</label>
+      <select name="row" id="row">
+        {% for a in rows %}
+        <option value="{{a}}">{{a}}</option>
+        {% endfor %}
+      </select>
+
+      <label for="columnm">Choose column for y-axis:</label>
+      <select name="column" id="column">
+        {% for b in columns %}
+        <option value="{{b}}">{{b}}</option>
+        {% endfor %}
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="fileDetail">
+      <p>
+        File: {{filename}} <br />Size: {{filesize}} <br />Columns: {{columnno}}
+        <br />Rows: {{rowno}}
+      </p>
+    </div>
+    <h3>Image Plot</h3>
+    {% if image %}
+    <img
+      src="{{ url_for('static', filename=image) }}"
+      alt="DataFrame Plot Image"
+    />
+    {% endif %}
+    <br /><a href="/">Upload another file</a>
+  </body>
+</html>

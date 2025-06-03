@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+.tblClass{
+    margin: 20px auto;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.fileDetail{
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: block;
+    width: fit-content;
+    border: 1px solid black;
+}
+img{
+    display: block;
+    align-content: center;
+    text-align: center;
+    margin: 0px auto;
+    width: 300px;
+    height: auto;
+}
+a{
+    display: block;
+    text-align: center;
+    align-content: center;
+}
