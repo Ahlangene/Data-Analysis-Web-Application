@@ -12,8 +12,7 @@ Web application designed to allow user to upload any CSV files and to visualize 
 - Python (Flask)
 - Pandas for data processing
 - HTML/CSS for frontend display
-- Gunicorn (for production deployment)
-- Heroku (optional, for cloud hosting)
+- Heroku
 
 **Project structure**
 ├── app.py                 # Main Flask application
