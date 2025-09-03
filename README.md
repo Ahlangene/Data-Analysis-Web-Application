@@ -2,7 +2,7 @@
 Web application designed to allow user to upload any CSV files and to visualize the data using a graph
 
 ## Live Demo
-👉 [Try the app on Heroku](https://data-analysis-web-app-d7a5dbedabae.herokuapp.com/))
+👉 [Try the app on Heroku](https://data-analysis-web-app-d7a5dbedabae.herokuapp.com/)
 
 **Features**
 - Upload CSV files and automatically extract metadata (filename, size, columns, rows)
